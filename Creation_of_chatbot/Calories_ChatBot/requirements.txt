@@ -1,0 +1,10 @@
+pandas 
+numpy
+seaborn
+# matplotlib.pyplot
+scikit-learn
+flask
+streamlit
+
+# google.generativeai
+google-generativeai
