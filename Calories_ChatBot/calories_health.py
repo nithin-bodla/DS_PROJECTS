@@ -35,8 +35,8 @@ def input_image_setup(uploaded_file):
 
 st.set_page_config(page_title="Gemini Image Demo")
 
-st.header("Gemini Application")
-input = st.text_input("Input Prompt: ", key="input")
+st.header("Calories & Health AI Assistant 🍎")
+input = st.text_input("Ask me something about calories, fitness, or health: ", key="input")
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg","jpeg","png"])
 image=""
 if uploaded_file is not None:
