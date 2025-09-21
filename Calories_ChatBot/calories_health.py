@@ -1,7 +1,3 @@
-from dotenv import load_dotenv
-
-load_dotenv()
-
 import streamlit as st
 import os
 import pathlib
@@ -10,8 +6,12 @@ from PIL import Image
 
 import google.generativeai as genai
 
-os.getenv("GOOGLE_API_KEY")
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+import streamlit as st
+import google.generativeai as genai
+
+
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
+genai.configure(api_key=GEMINI_API_KEY)
 
 def get_gemini_response(input,image,prompt):
     model = genai.GenerativeModel('gemini-2.5-flash')
