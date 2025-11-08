@@ -1,2 +1,0 @@
-# Ignore Streamlit secrets (do NOT commit your API keys)
-.streamlit/secrets.toml
